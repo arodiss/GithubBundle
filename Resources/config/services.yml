@@ -1,0 +1,12 @@
+#todo: Use exposed semantic configuration
+services:
+  github.client:
+    class: Arodiss\GithubBundle\Client\GithubClient
+    arguments:
+      - %github_token%
+      - %github_username%
+      - %github_repository_owner%
+      - %github_repository_name%
+
+  github.phraser:
+    class: Arodiss\GithubBundle\Phraser\Phraser
